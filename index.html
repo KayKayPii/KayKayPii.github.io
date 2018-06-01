@@ -8,6 +8,8 @@
     <script src="RPS.js"></script>
 </head>
 
+<body>
+
 <div class="topbar">
     <p>Welcome to Rock Paper Scissors Minigame!</p>
 </div>
@@ -24,6 +26,10 @@
     <p></p>
 </div>
 
+<div class="ai_s">
+    <p>AI has made the following choice!</p>
+</div>
+
 <div class="button-container-result">
     <p></p>
     <p></p>
@@ -35,8 +41,28 @@
 <div class="results">
     <p id="finish">hi</p>
 </div>
+            
+<div class=scoreboard>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Score</th>
+        </tr>
+        <tr>
+            <td>Player</td>
+            <td id=p_S>0</td>
+        </tr>
+        <tr>
+            <td>A.I.</td>
+            <td id=ai_S>0</td>
+        </tr>
+    </table>
+</div>
 
-<body>
-    
+<div class= "rButton">
+   <button type="button" class="reseter" onclick="reseter()">Reset Score!</button>    
+</div>
+            
 </body>
+
 </html>

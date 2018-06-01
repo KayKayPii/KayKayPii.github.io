@@ -1,36 +1,28 @@
 body{
     background-color:lightslategray;
+    margin:0px;
 }
 
 .topbar{
-    position: absolute;
-    top: 0;
-    box-sizing: border-box;
-    padding: 0px;
-    border: 0px;
-    margin: 0px;
+    position: relative;
     width: 100%;
+    height: 100%;
     text-align: center;
     background-color:lightgray;
     color:black;
-    font-size:40px;
-    line-height:0px;
+    font-size:30px;
+}
+
+p{
+    margin:0;
 }
 
 .instructions{
-    position: absolute;
-    top: 150px;
+    position: relative;
     text-align: center;
     width: 100%;
     font-size: 30px;
-}
-
-.results{
-    position: absolute;
-    top: 500px;
-    text-align: center;
-    width: 100%;
-    font-size: 30px;
+    top: 25px;
 }
 
 .button-container{
@@ -38,17 +30,37 @@ body{
     display: grid;
     grid-column-gap: 50px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    position: absolute;
-    top: 280px;
+    position: relative;
+    top: 50px;
 }
+
+.ai_s{
+    position: relative;
+    top: 100px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.results{
+    position: relative;
+    top: 150px;
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    border: 3px dashed white;
+    box-sizing: border-box;
+}
+
 
 .button-container-result{
     width: 100%;
     display: grid;
     grid-column-gap: 50px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    position: absolute;
-    top: 400px;
+    position: relative;
+    top: 120px;
 }
 
 button{
@@ -57,6 +69,30 @@ button{
     height: 50px;
     border: 4px solid;
     justify-self: center;
+}
+
+table{
+    border-spacing: 0px;
+}
+
+.scoreboard{
+    position: absolute;
+    bottom: 0;
+    border: 2px solid black;
+}
+
+th, td{
+    border: 1px solid black;
+    width: 80px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.rButton{
+    position: absolute;
+    bottom: 0;
+    left: 180px
 }
 
 .rock{
@@ -87,6 +123,14 @@ button{
     font-weight: 900;
 }
 
+.reseter{
+    border-color: silver;
+    color: silver;
+    font-size: 15px;
+    font-weight: 900;
+    border-radius: 20px;
+}
+
 .rock:hover{
     background-color:orangered;
     color:white;
@@ -100,5 +144,10 @@ button{
 .scissors:hover{
     background-color:darkslateblue;
     color:white;
+}
+
+.reseter:hover{
+    background-color: silver;
+    color: black;
 }
 
